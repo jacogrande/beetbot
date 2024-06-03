@@ -1,0 +1,10 @@
+node_modules
+.env
+.env.*
+beetbot-service-key.json
+*/.DS_Store
+*/.env
+*/.env.*
+
+dist
+yarn-error.log

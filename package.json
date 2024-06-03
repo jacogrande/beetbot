@@ -1,0 +1,26 @@
+{
+  "name": "beetbot",
+  "version": "0.1.0",
+  "description": "Discord bot for beat farming",
+  "main": "dist/index.js",
+  "author": "Jackson Prowell",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.15.2",
+    "dotenv": "^16.4.5",
+    "firebase-admin": "^12.1.1",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node-cron": "^3.0.11",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tscpaths": "^0.0.9",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "register": "ts-node src/commands/register.ts"
+  }
+}

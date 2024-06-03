@@ -19,8 +19,9 @@
     "typescript": "^5.4.5"
   },
   "scripts": {
-    "build": "tsc",
-    "start": "ts-node src/index.ts",
-    "register": "ts-node src/commands/register.ts"
+    "build": "tsc ",
+    "dev": "ts-node src/index.ts",
+    "register": "ts-node src/commands/register.ts",
+    "start": "TS_NODE_BASEURL=./dist node -r tsconfig-paths/register dist/src/index.js"
   }
 }

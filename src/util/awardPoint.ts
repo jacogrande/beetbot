@@ -7,12 +7,7 @@ export const awardPoint = async (
   ref: DocumentReference,
   user: FirestoreUser,
 ): Promise<boolean> => {
-  const today = new Date().toDateString();
   const lastAwardedAt = user.lastAwardedAt?.toDate() || null;
-  // users can only get 1 point a day
-  if (lastAwardedAt && lastAwardedAt.toDateString() === today) {
-    return false;
-  }
   const updates: Partial<FirestoreUser> = {
     score: user.score + 1,
     weeklyScore: user.weeklyScore + 1,

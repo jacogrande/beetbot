@@ -1,4 +1,5 @@
 import { db } from "@/config/firebase";
+import { getRandomTheme } from "@/config/themes";
 import { client } from "@/index";
 import { TextChannel } from "discord.js";
 
@@ -43,12 +44,15 @@ const postScoreAnnouncement = async (
     BEETBOT_CHANNEL_ID,
   ) as TextChannel;
   if (!beetChannel) return;
+  const loserShoutout =
+    loserIds.length > 0 ? "\n**Better luck next time** " + loserMentions : "";
+  const weeklyTheme = getRandomTheme();
   await beetChannel.send(
     "Happy Monday! Here are last week's results.\n" +
       "**#1 Victory Royales**: " +
       winnerMentions +
+      loserShoutout +
       "\n" +
-      "**Better luck next time** " +
-      loserMentions,
+      `This week's theme: ${weeklyTheme}`,
   );
 };

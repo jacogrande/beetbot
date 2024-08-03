@@ -53,6 +53,6 @@ const postScoreAnnouncement = async (
       winnerMentions +
       loserShoutout +
       "\n" +
-      `This week's theme: ${weeklyTheme}`,
+      `This week's challenge: ${weeklyTheme}`,
   );
 };

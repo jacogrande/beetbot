@@ -37,6 +37,7 @@ const GENRES: string[] = [
   "Soundtrack",
   "Singer Songwriter",
   "Country",
+  "Afrobeat",
 ];
 
 const YOUTUBE_VIDEOS: string[] = [

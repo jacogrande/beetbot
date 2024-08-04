@@ -66,6 +66,7 @@ const YOUTUBE_VIDEOS: string[] = [
   "https://www.youtube.com/watch?v=AbonVshOLf0",
   "https://www.youtube.com/watch?v=-gGEr4LHGJE",
   "https://www.youtube.com/watch?v=Vq9dX8z4_Kw",
+  "https://www.youtube.com/watch?v=FI-4HNQg1JI",
 ];
 
 const MOVIES: string[] = ["Fantastic Planet", "El Dorado", "Prince of Egypt"];
